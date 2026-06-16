@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #1d1d1f;
+    --text-color: #333336;
+    --text-muted: #86868b;
+    --bg-main: #ffffff;
+    --bg-secondary: #f5f5f7;
+    --border-radius: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Layout Containers */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 800px;
+}
+
+.text-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: var(--bg-secondary);
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%); /* Warna biru tua elegan tema kesehatan/tech */
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Showcase Image (Hero Image) */
+.showcase {
+    padding: 0 20px 80px 20px;
+    margin-top: -80px; /* Menarik gambar ke atas, menumpuk hero */
+    position: relative;
+    z-index: 2;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border: 4px solid white;
+}
+
+/* General Sections */
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Text Grid (3 columns) */
+.text-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.text-block h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Split Layout (Image & Text side by side) */
+.split-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.split-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-col {
+    flex: 1 1 400px;
+}
+
+.text-col {
+    flex: 1 1 400px;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.border-img {
+    border: 1px solid #e0e0e0;
+}
+
+.shadow {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.tags span {
+    background: white;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid #d2d2d7;
+    transition: all 0.2s ease;
+}
+
+.tags span:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

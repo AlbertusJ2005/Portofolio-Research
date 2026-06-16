@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Machine Learning for Healthcare</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+
+    <div class="hero fade-in">
+        <div class="container">
+            <h1>Machine Learning for Healthcare:<br>Diabetes Prediction</h1>
+            <p>Evaluating machine learning algorithms and stacking ensemble approaches to improve early diabetes detection.</p>
+        </div>
+    </div>
+
+    <section class="showcase fade-in">
+        <div class="container">
+            <img src="image/HalamanJurnal.png" alt="Journal Publication Page" class="featured-image">
+        </div>
+    </section>
+
+    <section class="bg-light fade-in">
+        <div class="container text-grid">
+            <div class="text-block">
+                <h2>Overview</h2>
+                <p>Diabetes is a chronic disease that continues to rise globally, requiring early detection to aid in prevention and medical decision-making. In this research, I collaborated on developing a machine learning model to predict diabetes risk using patient health data. The study focuses on comparing the performance of several algorithms and utilizing an ensemble learning approach to improve prediction accuracy. The findings were successfully published in the EMACS (Engineering, Mathematics and Computer Science) Journal.</p>
+            </div>
+            <div class="text-block">
+                <h2>Research Objective</h2>
+                <p>The objective of this research is to evaluate the effectiveness of various machine learning algorithms in predicting diabetes and to identify the approach that yields the best performance. Furthermore, it aims to explore how ensemble learning methods can enhance prediction stability and accuracy compared to single models.</p>
+            </div>
+            <div class="text-block">
+                <h2>My Contribution</h2>
+                <p>As a research team member, I was deeply involved in data processing, machine learning model development, experimental evaluation, data visualization, and drafting the scientific manuscript. This experience significantly strengthened my skills in data analytics, programming, academic research, and cross-disciplinary team collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in">
+        <div class="container split-layout">
+            <div class="image-col">
+                <img src="image/FlowchartMetodePenelitian.png" alt="Research Methodology Flowchart" class="content-image">
+            </div>
+            <div class="text-col">
+                <h2>Research Process</h2>
+                <p>The research began with exploring the healthcare dataset to understand its characteristics and identify challenges, notably class imbalance. We then proceeded with data preprocessing, which included median value imputation, applying SMOTE to handle the class imbalance, and normalizing the data using Min-Max Scaling. Once the data was prepared, several machine learning models were trained and evaluated before implementing the Stacking Ensemble method.</p>
+                
+                <h2 style="margin-top: 40px;">Machine Learning Models</h2>
+                <p>Three primary algorithms were utilized in this study: Logistic Regression, K-Nearest Neighbors (KNN), and Naive Bayes. These models were subsequently combined using a Stacking Ensemble approach to leverage the strengths of each individual algorithm, resulting in more stable and robust predictions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light fade-in">
+        <div class="container split-layout reverse">
+            <div class="text-col">
+                <h2>Results & Impact</h2>
+                <p>The results indicated that K-Nearest Neighbors (KNN) delivered the best performance among the individual models, achieving an accuracy of 77.27%. However, the Stacking Ensemble approach, utilizing Logistic Regression as the meta-model, achieved the highest overall performance with an accuracy of <strong>80.52%</strong> and an AUC score of <strong>0.8604</strong>. This proves that combining multiple machine learning models can significantly elevate prediction quality.</p>
+                <p><strong>The Impact:</strong> This research demonstrates that the application of machine learning and ensemble learning has immense potential to assist in the early screening of diabetes much faster and more efficiently. This approach can serve as a foundational layer for developing clinical decision support systems, particularly in environments with limited medical resources.</p>
+            </div>
+            <div class="image-col">
+                <img src="image/TabelPerformaModel.png" alt="Model Performance Table" class="content-image border-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in">
+        <div class="container split-layout">
+            <div class="image-col">
+                <img src="image/HalamanPertamaPaper.png" alt="First Page of the Paper" class="content-image border-img shadow">
+            </div>
+            <div class="text-col text-content">
+                <h2>Publication</h2>
+                <p>This research has been officially published and is available to the public and scientific community.</p>
+                <br>
+                <p><strong>Journal:</strong><br>Engineering, Mathematics and Computer Science Journal (EMACS)</p>
+                <br>
+                <p><strong>Paper Title:</strong><br>A Comparative Study of Machine Learning and Stacking Ensemble Models for Diabetes Prediction</p>
+                <br>
+                <p><strong>DOI:</strong><br><a href="https://doi.org/10.21512/emacsjournal.v8i1.15332" target="_blank" style="color: #0066cc;">10.21512/emacsjournal.v8i1.15332</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light fade-in">
+        <div class="container text-content text-center">
+            <h2>What I Learned</h2>
+            <div class="tags justify-center">
+                <span>Machine Learning</span>
+                <span>Data Preprocessing</span>
+                <span>Exploratory Data Analysis</span>
+                <span>Ensemble Learning</span>
+                <span>Healthcare Analytics</span>
+                <span>Data Visualization</span>
+                <span>Scientific Writing</span>
+                <span>Research Methodology</span>
+                <span>Team Collaboration</span>
+                <span>Critical Thinking</span>
+                <span>Problem Solving</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="journal.js"></script>
+</body>
+</html>
